@@ -1,4 +1,21 @@
-# Creating your site
+# 📋 Module Descriptions
+Module descriptions within the package are listed below! 👇 
+### 🧱 InstanceUtils
+* Serves as an addition to the available methods in Roblox Studio regarding instance **finding**.
+* Provides methods for instance validation.
+* Advanced methods for creating new instances can also be found here!
+### 🚫 AssertionUtils
+* Used to help
+### ♻️ ConversionUtils
+* Used to mak
+### 🛰️ SpatialUtils
+* Used to help
+### 🧩 TableUtils
+* Used to help
+### 👤 UserUtils
+* Used to help
+### 🙋‍♂️ PlayerUtils
+* Used to help
 
 After you've [installed] Material for MkDocs, you can bootstrap your project
 documentation using the `mkdocs` executable. Go to the directory where you want
