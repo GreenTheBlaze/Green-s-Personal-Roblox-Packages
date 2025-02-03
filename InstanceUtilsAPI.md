@@ -85,7 +85,7 @@ for _, child in childrenOfCamera2 do
    --> ASimpleTruss
    --> Foo
 ```
-
+----
 #### getSiblingsOfName
 [Needs doing]
 
