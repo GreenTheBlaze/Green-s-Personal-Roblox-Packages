@@ -26,10 +26,13 @@ Throughout this documentation here, we're going to be using an example Roblox St
 [Needs adding]
 
 **Syntax:** `InstanceUtils:getSiblings(child: Instance) → {Instance}`
+
 **Parameters:**
 * `child`: The instance to whom the siblings are going to be searched from.
+
 **Returns:**
 * `Array`: An array containing the child's siblings.
+
 **Code Example:**
 ```lua
 local siblingsOfCamera = InstanceUtils:getSiblings(game.Lighting.Sky)  -- Returns: { Lighting.ANormalLight, Lighting.ANormalLightLol }
@@ -40,10 +43,13 @@ local siblingsOfCamera = InstanceUtils:getSiblings(game.Lighting.Sky)  -- Return
 [Needs adding]
 
 **Syntax:** `InstanceUtils:getSiblings(child: Instance) → {Instance}`
+
 **Parameters:**
 * `child`: The instance to whom the siblings are going to be searched from.
+
 **Returns:**
 * `Array`: An array containing the child's siblings.
+
 **Code Example:**
 ```lua
 local siblingsOfCamera = InstanceUtils:getSiblings(game.Lighting.Sky)  -- Returns: { Lighting.ANormalLight, Lighting.ANormalLightLol }
