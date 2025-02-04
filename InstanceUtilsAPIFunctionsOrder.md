@@ -2,6 +2,16 @@
 
 bio book is reference for comments
 
+----
+## Miscellanious
+
+InstanceUtils:createInstance
+
+InstanceUtils:cloneWithNewProperties
+
+InstanceUtils:setInstanceProperties
+
+----
 ## Get
 
 InstanceUtils:getSiblings(child: Instance): {Instance}
