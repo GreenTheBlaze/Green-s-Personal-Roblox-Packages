@@ -38,14 +38,22 @@ game      # Class: DataModel
 **Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
 
 **Parameters:**
-* `child`: The instance to whom the siblings are going to be searched from.
+* `className`: Class name of the new instance to create.
+* `propertiesTable`: The table in which the properties to configure for the new instance should be listed.
 
 **Returns:**
-* `Array`: An array containing the `child`'s siblings.
+* `Instance`: The `Instance` created.
 
 **Code Example:**
 ```lua
-local siblingsOfSky = InstanceUtils:getSiblings(game.Lighting.Sky) --> {game.Lighting.ANormalLight, game.Lighting.ANormalLightLol}
+local newCoolBlock = InstanceUtils:createInstance("Part", {
+   Parent = workspace.Camera,
+   Name = "NewCoolBlock",
+   BrickColor = BrickColor.new(1, 0, 0)
+})
+
+print(typeof(newCoolBlock)) --> Instance
+print(newCoolBlock.Parent.Name) --> Camera
 ```
 
 ----
