@@ -9,4 +9,20 @@ PlayerUtils:getPlayersFromCharacters
 
 PlayerUtils:getPlayersByDisplayName
 
-PlayerUtils:getPlayersByDisplayNames
+PlayerUtils:getPlayersByDisplayNamesRange
+
+----
+## FindFirst
+
+PlayerUtils:findFirstPlayerByDisplayName
+
+PlayerUtils:findFirstPlayersByDisplayNames
+
+PlayerUtils:findFirstPlayersByDisplayNamesRanges
+
+----
+PlayerUtils:findFirstPlayerOfProperties
+
+PlayerUtils:findFirstPlayersB
+
+PlayerUtils:findFirstPlayersByDisplayNamesRanges
