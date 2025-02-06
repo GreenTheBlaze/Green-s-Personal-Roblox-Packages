@@ -28,6 +28,9 @@ game      # Class: DataModel
 ```
 *Don't mind the weird names LOL.*
 
+### Get
+This method extension 
+
 #### getSiblings
 Returns an array (a numerically indexed table) containing all direct siblings of the instance. In other words, it retrieves every `Instance` that shares the same `Parent` as the given `child`.
 
