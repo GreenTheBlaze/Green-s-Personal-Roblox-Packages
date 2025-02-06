@@ -1,18 +1,18 @@
 ## Key Functions
 
-UserUtils:GetUserInfoByUserIdAsync
+UserUtils:getUserInfoByUserIdAsync
 
 ----
-UserUtils:GetUserInfoByUserNameAsync
+UserUtils:getUserInfoByUserNameAsync
 
-UserUtils:GetUserInfosByUserNamesAsync
-
-----
-UserUtils:GetUserInfoByCharacterAsync
-
-UserUtils:GetUserInfosByCharactersAsync
+UserUtils:getUserInfosByUserNamesAsync
 
 ----
-UserUtils:GetUserInfoByPlayerAsync
+UserUtils:getUserInfoByCharacterAsync
 
-UserUtils:GetUserInfosByPlayersAsync
+UserUtils:getUserInfosByCharactersAsync
+
+----
+UserUtils:getUserInfoByPlayerAsync
+
+UserUtils:getUserInfosByPlayersAsync
