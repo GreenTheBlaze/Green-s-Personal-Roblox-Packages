@@ -404,33 +404,58 @@ InstanceUtils:waitForInstanceFromTable
 
 InstanceUtils:waitForInstancesFromTable
 
+----
 InstanceUtils:waitForInstanceOfClassFromTable
 
 InstanceUtils:waitForInstancesOfClassesFromTable
 
+----
 InstanceUtils:waitForInstanceOfClassesRangeFromTable
 
 InstanceUtils:waitForInstancesOfClassesRangesFromTable
 
+----
 InstanceUtils:waitForInstanceOfNameAndClassFromTable
 
 InstanceUtils:waitForInstancesOfNamesAndClassesFromTable
 
+----
 InstanceUtils:waitForInstanceOfNamesRangeAndClassesRangeFromTable
 
 InstanceUtils:waitForInstancesOfNamesRangesAndClassesRangesFromTable
 
+----
 InstanceUtils:waitForInstanceOfPropertiesFromTable
 
 InstanceUtils:waitForInstancesOfPropertiesFromTable
 
+----
 InstanceUtils:waitForInstanceOfPropertiesRangeFromTable
 
 InstanceUtils:waitForInstancesOfPropertiesRangesFromTable
 
+----
 InstanceUtils:waitForInstanceWhichHasPropertiesFromTable
 
 InstanceUtils:waitForInstancesWhichHavePropertiesFromTable
+
+----
+InstanceUtils:waitForInstancesInPath
+
+----
+InstanceUtils:waitForInstancesOfNamesInPath
+
+InstanceUtils:waitForInstancesOfNamesRangesInPath
+
+----
+InstanceUtils:waitForInstancesOfClassesInPath
+
+InstanceUtils:waitForInstancesOfClassesRangesInPath
+
+----
+InstanceUtils:waitForInstancesOfNamesAndClassesInPath
+
+InstanceUtils:waitForInstancesOfNamesRangesAndClassesRangesInPath
 
 ----
 ## FindFirst
@@ -593,30 +618,37 @@ InstanceUtils:findFirstInstanceFromTable
 
 InstanceUtils:findFirstInstancesFromTable
 
+----
 InstanceUtils:findFirstInstanceOfClassFromTable
 
 InstanceUtils:findFirstInstancesOfClassesFromTable
 
+----
 InstanceUtils:findFirstInstanceOfClassesRangeFromTable
 
 InstanceUtils:findFirstInstancesOfClassesRangesFromTable
 
+----
 InstanceUtils:findFirstInstanceOfNameAndClassFromTable
 
 InstanceUtils:findFirstInstancesOfNamesAndClassesFromTable
 
+----
 InstanceUtils:findFirstInstanceOfNamesRangeAndClassesRangeFromTable
 
 InstanceUtils:findFirstInstancesOfNamesRangesAndClassesRangesFromTable
 
+----
 InstanceUtils:findFirstInstanceOfPropertiesFromTable
 
 InstanceUtils:findFirstInstancesOfPropertiesFromTable
 
+----
 InstanceUtils:findFirstInstanceOfPropertiesRangeFromTable
 
 InstanceUtils:findFirstInstancesOfPropertiesRangesFromTable
 
+----
 InstanceUtils:findFirstInstanceWhichHasPropertiesFromTable
 
 InstanceUtils:findFirstInstancesWhichHavePropertiesFromTable
