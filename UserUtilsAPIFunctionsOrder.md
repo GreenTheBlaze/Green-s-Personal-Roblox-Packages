@@ -1,1 +1,6 @@
-# Key Functions
+## Key Functions
+
+UserUtils:GetUserInfoByUserIdAsync
+
+----
+UserUtils:GetUserInfoByUserIdAsync
