@@ -11,3 +11,8 @@ UserUtils:GetUserInfosByUserNamesAsync
 UserUtils:GetUserInfoByCharacterAsync
 
 UserUtils:GetUserInfosByCharactersAsync
+
+----
+UserUtils:GetUserInfoByPlayerAsync
+
+UserUtils:GetUserInfosByPlayersAsync
