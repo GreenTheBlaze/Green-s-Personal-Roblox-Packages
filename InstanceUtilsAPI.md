@@ -33,7 +33,7 @@ game      # Class: DataModel
 ## Miscellanious Functions
 
 ### createInstance
-[needs doing]
+Creates a new Instance of type className, similar to the default constructor `Instance.new` which is already provided by Roblox.
 
 **Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
 
@@ -47,9 +47,41 @@ game      # Class: DataModel
 **Code Example:**
 ```lua
 local newCoolBlock = InstanceUtils:createInstance("Part", {
-   Parent = workspace.Camera,
    Name = "NewCoolBlock",
-   BrickColor = BrickColor.new(1, 0, 0)
+   BrickColor = BrickColor.new(1, 0, 0),
+   Parent = workspace.Camera
+})
+
+print(typeof(newCoolBlock)) --> Instance
+print(newCoolBlock.Parent.Name) --> Camera
+```
+
+----
+
+### createInstances
+[needs doing]
+
+**Syntax:** `InstanceUtils:createInstances(instancesConfig: {{any}}) → ...Instance`
+
+**Parameters:**
+* `instancesConfig`: The configuration array for each individual instance being created.
+
+**Returns:**
+* `...Instance`: The created `Instance` objects, returned separately.
+
+**Code Example:**
+```lua
+local newCoolBlock = InstanceUtils:createInstance({
+   {
+      Name = "NewCoolBlock",
+      BrickColor = BrickColor.new(1, 0, 0),
+      Parent = workspace.Camera
+   },
+   {
+      Name = "NewCoolBlock",
+      BrickColor = BrickColor.new(1, 0, 0),
+      Parent = workspace.Camera
+   }
 })
 
 print(typeof(newCoolBlock)) --> Instance
