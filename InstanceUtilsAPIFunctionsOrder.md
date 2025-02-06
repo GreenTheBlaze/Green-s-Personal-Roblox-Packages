@@ -7,9 +7,17 @@ bio book is reference for comments
 
 InstanceUtils:createInstance
 
+InstanceUtils:createInstances
+
+----
 InstanceUtils:cloneWithNewProperties
 
+InstanceUtils:clonesWithNewProperties
+
+----
 InstanceUtils:setInstanceProperties
+
+InstanceUtils:setInstancesProperties
 
 ----
 ## Get
