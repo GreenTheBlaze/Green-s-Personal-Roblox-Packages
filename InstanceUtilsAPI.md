@@ -1,4 +1,3 @@
-## Functions
 Throughout this documentation here, we're going to be using an example Roblox Studio object hierarchy:
 ```
 game      # Class: DataModel
@@ -29,11 +28,32 @@ game      # Class: DataModel
    └─ ANormalLightLol      # Class: MeshPart
 ```
 *Don't mind the weird names LOL.*
+**Also, note that the way in which the objects are ordered here is not necessarily compliant with the order that Roblox puts instances in - any outputs in examples are to be in the order from which they are presented in the above. MAKE SURE TO READ THIS OR YOU MAY BE CONFUSED!**
 
-### Get
+## Miscellanious Functions
+
+### createInstance
+[needs doing]
+
+**Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
+
+**Parameters:**
+* `child`: The instance to whom the siblings are going to be searched from.
+
+**Returns:**
+* `Array`: An array containing the `child`'s siblings.
+
+**Code Example:**
+```lua
+local siblingsOfSky = InstanceUtils:getSiblings(game.Lighting.Sky) --> {game.Lighting.ANormalLight, game.Lighting.ANormalLightLol}
+```
+
+----
+
+## Get
 This method extension focusses mainly on retrieving instances and outputting them in the form of an `Instance` array. Exceptions to this include the getting instances from path methods.
 
-#### getSiblings
+### getSiblings
 Returns an array (a numerically indexed table) containing all direct siblings of the given `child`. In other words, it retrieves every `Instance` that shares the same `Parent` as the `child`.
 
 **Syntax:** `InstanceUtils:getSiblings(child: Instance) → {Instance}`
@@ -46,11 +66,11 @@ Returns an array (a numerically indexed table) containing all direct siblings of
 
 **Code Example:**
 ```lua
-local siblingsOfSky = InstanceUtils:getSiblings(game.Lighting.Sky) -- Returns: { Lighting.ANormalLight, Lighting.ANormalLightLol }
+local siblingsOfSky = InstanceUtils:getSiblings(game.Lighting.Sky) --> {game.Lighting.ANormalLight, game.Lighting.ANormalLightLol}
 ```
 
 ----
-#### getAncestors
+### getAncestors
 Returns an array containing all ancestors of the given `descendant`. Specifically, it retrieves every `Instance` in the hierarchy above the `descendant`, starting from its immediate `Parent`, working up towards the `DataModel`.
 
 **Syntax:** `InstanceUtils:getAncestors(descendant: Instance) → {Instance}`
@@ -63,11 +83,11 @@ Returns an array containing all ancestors of the given `descendant`. Specificall
 
 **Code Example:**
 ```lua
-local ancestorsOfBar = InstanceUtils:getSiblings(workspace.Camera2.SomethingElse.Bar) -- Returns: { workspace.Camera2.SomethingElse, workspace.Camera2, workspace, game }
+local ancestorsOfBar = InstanceUtils:getSiblings(workspace.Camera2.SomethingElse.Bar) --> {workspace.Camera2.SomethingElse, workspace.Camera2, workspace, game}
 ```
 
 ----
-#### getChildrenOfName
+### getChildrenOfName
 Returns an array containing all children of the given `parent` of which their `Object.Name` properties are equal to the given `name`.
 
 **Syntax:** `InstanceUtils:getChildrenOfName(parent: Instance, name: string) → {Instance}`
@@ -81,7 +101,7 @@ Returns an array containing all children of the given `parent` of which their `O
 
 **Code Example:**
 ```lua
-local childrenOfCamera2 = InstanceUtils:getChildrenOfName(workspace.Camera2, "SurfaceGui") --> { workspace.Camera2.SurfaceGui, workspace.Camera2.SurfaceGui, workspace.Camera2.SurfaceGui }
+local childrenOfCamera2 = InstanceUtils:getChildrenOfName(workspace.Camera2, "SurfaceGui") --> {workspace.Camera2.SurfaceGui, workspace.Camera2.SurfaceGui, workspace.Camera2.SurfaceGui}
 
 for _, child in childrenOfCamera2 do
    print(child.Name)
@@ -91,7 +111,7 @@ for _, child in childrenOfCamera2 do
    --> SurfaceGui (ClassName: BasePart)
 ```
 ----
-#### getSiblingsOfName
+### getSiblingsOfName
 Returns an array containing all siblings of the given `parent` of which their `Object.Name` properties are equal to the given `name`.
 
 **Syntax:** `InstanceUtils:getSiblingsOfName(child: Instance, name: string) → {Instance}`
@@ -104,12 +124,13 @@ Returns an array containing all siblings of the given `parent` of which their `O
 
 **Code Example:**
 ```lua
-local siblingsOfASimpleTruss = InstanceUtils:getSiblingsOfName(workspace.Camera2.ASimpleTruss) --> { workspace.Camera2.SurfaceGui, workspace.Camera2.SomethingElse, workspace.Camera2.Foo }
+local siblingsOfWorkspace = InstanceUtils:getSiblingsOfName(workspace.Part1, "Part2") --> {workspace.Part2, workspace.Part2, workspace.Part2, workspace.Part2}
 
 for _, sibling in siblingsOfASimpleTruss do
    print(sibling.Name)
    -- Output:
-   --> SurfaceGui
-   --> SomethingElse
-   --> Foo
+   --> Part2
+   --> Part2
+   --> Part2
+   --> Part2
 ```
