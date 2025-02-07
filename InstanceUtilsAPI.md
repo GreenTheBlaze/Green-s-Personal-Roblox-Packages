@@ -59,9 +59,44 @@ print(newCoolBlock.Parent.Name) --> Camera
 ----
 
 ### createInstances
-Creates multiple Instance objects based on the provided configuration array. Extended version of [createInstance](#createInstance).
+Creates multiple instances based on the provided configuration array. Extended version of [createInstance](#createInstance).
 
 **Syntax:** `InstanceUtils:createInstances(instancesConfig: {{any}}) → ...Instance`
+
+**Parameters:**
+* `instancesConfig: []`: The configuration array for each individual instance being created.
+
+**Returns:**
+* [`Tuple`](https://create.roblox.com/docs/luau/tuples): The created instances.
+
+**Code Example:**
+```lua
+local fooBar, aRedMeshPart = InstanceUtils:createInstances({
+   {
+      Name = "FooBar",
+      ClassName = "Part",
+      BrickColor = BrickColor.new(1, 0, 0),
+      Parent = workspace.Camera
+   },
+   {
+      Name = "ARedMeshPart",
+      ClassName = "MeshPart",
+      Parent = workspace
+   }
+})
+
+print(typeof(fooBar)) --> Instance
+print(typeof(aRedMeshPart)) --> FooBar
+
+print(fooBar.Name) --> Camera
+```
+
+----
+
+### cloneAndReplaceProperties
+Creates a full copy of the provided `cloneInstance` including all of its descendants, ignoring all instances that are not [Archivable](https://create.roblox.com/docs/reference/engine/classes/Instance#Archivable).
+
+**Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance) → ...Instance`
 
 **Parameters:**
 * `instancesConfig`: The configuration array for each individual instance being created.
@@ -92,13 +127,15 @@ print(fooBar.Name) --> Camera
 ```
 
 ----
-### cloneAndReplaceProperties
+
+### clonesAndReplaceProperties
 Creates a full copy of the provided `cloneInstance` including all of its descendants, ignoring all instances that are not [Archivable](https://create.roblox.com/docs/reference/engine/classes/Instance#Archivable).
+Creates full copies Instance objects based on the provided configuration array. Extended version of [createInstance](#createInstance).
 
 **Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance) → ...Instance`
 
 **Parameters:**
-* `instancesConfig`: The configuration array for each individual instance being created.
+* `instancesConfig: [Array](https://create.roblox.com/docs/luau/tables#arrays)`: The configuration array for each individual instance being created.
 
 **Returns:**
 * [`Tuple`](https://create.roblox.com/docs/luau/tuples): The created instances.
@@ -147,6 +184,7 @@ local siblingsOfSky = InstanceUtils:getSiblings(game.Lighting.Sky) --> {game.Lig
 ```
 
 ----
+
 ### getAncestors
 Returns an array containing all ancestors of the given `descendant`. Specifically, it retrieves every `Instance` in the hierarchy above the `descendant`, starting from its immediate `Parent`, working up towards the `DataModel`.
 
@@ -164,6 +202,7 @@ local ancestorsOfBar = InstanceUtils:getSiblings(workspace.Camera2.SomethingElse
 ```
 
 ----
+
 ### getChildrenOfName
 Returns an array containing all children of the given `parent` of which their `Object.Name` properties are equal to the given `name`.
 
@@ -184,7 +223,9 @@ print("Name is '" .. childrenOfCamera2[1].Name .. "' and ClassName is '" .. chil
 print("Name is '" .. childrenOfCamera2[2].Name .. "' and ClassName is '" .. childrenOfCamera2[2].ClassName .. "'") --> Name is 'FakeThing1' and ClassName is 'Part'
 print("Name is '" .. childrenOfCamera2[3].Name .. "' and ClassName is '" .. childrenOfCamera2[3].ClassName .. "'") --> Name is 'FakeThing1' and ClassName is 'Part'
 ```
+
 ----
+
 ### getSiblingsOfName
 Returns an array containing all siblings of the given `parent` of which their `Object.Name` properties are equal to the given `name`.
 
