@@ -33,7 +33,7 @@ game      # Class: DataModel
 ## Miscellanious Functions
 
 ### createInstance
-Creates a new Instance of type className, similar to the default constructor `Instance.new` which is already provided by Roblox.
+Creates a new `Instance` of type `className`, similar to the default constructor `Instance.new` which is already provided by Roblox.
 
 **Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
 
@@ -59,7 +59,7 @@ print(newCoolBlock.Parent.Name) --> Camera
 ----
 
 ### createInstances
-[needs doing]
+Creates multiple Instance objects based on the provided configuration array. Extended version of [createInstance](#createInstance).
 
 **Syntax:** `InstanceUtils:createInstances(instancesConfig: {{any}}) → ...Instance`
 
