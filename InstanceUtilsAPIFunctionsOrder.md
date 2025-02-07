@@ -10,9 +10,9 @@ InstanceUtils:createInstance
 InstanceUtils:createInstances
 
 ----
-InstanceUtils:cloneWithNewProperties
+InstanceUtils:cloneAndReplaceProperties
 
-InstanceUtils:clonesWithNewProperties
+InstanceUtils:clonesAndReplaceProperties
 
 ----
 InstanceUtils:setInstanceProperties
