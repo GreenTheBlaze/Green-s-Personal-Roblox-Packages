@@ -4,9 +4,9 @@ game      # Class: DataModel
 ├─ Workspace
 │  ├─ Camera      # Class: Camera
 │  ├─ Camera2      # Class: Camera
-│  │  ├─ SurfaceGui      # Class: Camera
-│  │  ├─ SurfaceGui      # Class: BasePart
-│  │  ├─ SurfaceGui      # Class: BasePart
+│  │  ├─ FakeThing1      # Class: Camera
+│  │  ├─ FakeThing1      # Class: Part
+│  │  ├─ FakeThing1      # Class: Part
 │  │  ├─ SomethingElse      # Class: Camera
 │  │  │  └─ Bar      # Class: TextLabel
 │  │  ├─ ASimpleTruss      # Class: TrussPart
@@ -14,11 +14,11 @@ game      # Class: DataModel
 │  ├─ GreenTheBlaze      # Class: Model
 │  ├─ GreenTheBlaze      # Class: Part
 │  ├─ FakeCamera      # Class: BasePart
-│  ├─ Part      # Class: BasePart
-│  ├─ Part      # Class: BasePart
-│  ├─ Part1      # Class: BasePart
-│  ├─ Part2      # Class: BasePart
-│  ├─ Part2      # Class: BasePart
+│  ├─ Part      # Class: Part
+│  ├─ Part      # Class: Part
+│  ├─ Part1      # Class: Part
+│  ├─ Part2      # Class: Part
+│  ├─ Part2      # Class: Part
 │  ├─ Part2      # Class: Union
 │  ├─ Part2      # Class: MeshPart
 │  └─ Terrain     # Class: Terrain
@@ -67,25 +67,28 @@ Creates multiple Instance objects based on the provided configuration array. Ext
 * `instancesConfig`: The configuration array for each individual instance being created.
 
 **Returns:**
-* `...Instance`: The created `Instance` objects, returned separately.
+* `...Instance`: The created instances, returned separately.
 
 **Code Example:**
 ```lua
-local newCoolBlock = InstanceUtils:createInstance({
+local fooBar, aRedMeshPart = InstanceUtils:createInstances({
    {
-      Name = "NewCoolBlock",
+      Name = "FooBar",
+      ClassName = "Part",
       BrickColor = BrickColor.new(1, 0, 0),
       Parent = workspace.Camera
    },
    {
-      Name = "NewCoolBlock",
-      BrickColor = BrickColor.new(1, 0, 0),
-      Parent = workspace.Camera
+      Name = "ARedMeshPart",
+      ClassName = "MeshPart",
+      Parent = workspace
    }
 })
 
-print(typeof(newCoolBlock)) --> Instance
-print(newCoolBlock.Parent.Name) --> Camera
+print(typeof(fooBar)) --> Instance
+print(typeof(aRedMeshPart)) --> FooBar
+
+print(fooBar.Name) --> Camera
 ```
 
 ----
@@ -141,14 +144,11 @@ Returns an array containing all children of the given `parent` of which their `O
 
 **Code Example:**
 ```lua
-local childrenOfCamera2 = InstanceUtils:getChildrenOfName(workspace.Camera2, "SurfaceGui") --> {workspace.Camera2.SurfaceGui, workspace.Camera2.SurfaceGui, workspace.Camera2.SurfaceGui}
+local childrenOfCamera2 = InstanceUtils:getChildrenOfName(workspace.Camera2, "FakeThing1") --> {workspace.Camera2.FakeThing1, workspace.Camera2.FakeThing1, workspace.Camera2.FakeThing1}
 
-for _, child in childrenOfCamera2 do
-   print(child.Name)
-   -- Output:
-   --> SurfaceGui (ClassName: Camera)
-   --> SurfaceGui (ClassName: BasePart)
-   --> SurfaceGui (ClassName: BasePart)
+print("Name is '" .. childrenOfCamera2[1].Name .. "' and ClassName is '" .. childrenOfCamera2[1].ClassName .. "'") --> Name is 'FakeThing1' and ClassName is 'Camera'
+print("Name is '" .. childrenOfCamera2[2].Name .. "' and ClassName is '" .. childrenOfCamera2[2].ClassName .. "'") --> Name is 'FakeThing1' and ClassName is 'Part'
+print("Name is '" .. childrenOfCamera2[3].Name .. "' and ClassName is '" .. childrenOfCamera2[3].ClassName .. "'") --> Name is 'FakeThing1' and ClassName is 'Part'
 ```
 ----
 ### getSiblingsOfName
