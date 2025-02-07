@@ -96,10 +96,11 @@ print(fooBar.Name) --> Camera
 ### cloneAndReplaceProperties
 Creates a full copy of the provided `cloneInstance` including all of its descendants, ignoring all instances that are not [Archivable](https://create.roblox.com/docs/reference/engine/classes/Instance#Archivable).
 
-**Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance) → ...Instance`
+**Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance, propertiesTable) → ...Instance`
 
 **Parameters:**
-* `instancesConfig`: The configuration array for each individual instance being created.
+* `cloneInstance`: [`Instance`](https://create.roblox.com/docs/reference/engine/classes/Instance) - The configuration array for each individual instance being created.
+* `propertiesTable`: [`Array`](https://create.roblox.com/docs/luau/tables#arrays) - The configuration array for each individual instance being created.
 
 **Returns:**
 * [`Tuple`](https://create.roblox.com/docs/luau/tuples): The created instances.
@@ -135,7 +136,7 @@ Creates full copies Instance objects based on the provided configuration array. 
 **Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance) → ...Instance`
 
 **Parameters:**
-* `instancesConfig: [Array](https://create.roblox.com/docs/luau/tables#arrays)`: The configuration array for each individual instance being created.
+* `instancesConfig:` [`Array`](https://create.roblox.com/docs/luau/tables#arrays)`: The configuration array for each individual instance being created.
 
 **Returns:**
 * [`Tuple`](https://create.roblox.com/docs/luau/tuples): The created instances.
