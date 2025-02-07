@@ -33,16 +33,16 @@ game      # Class: DataModel
 ## Miscellanious Functions
 
 ### createInstance
-Creates a new `Instance` of type `className`, similar to the default constructor `Instance.new` which is already provided by Roblox.
+Creates a new [`Instance`](https://create.roblox.com/docs/reference/engine/classes/Instance) of type `className`, similar to the default constructor [`Instance.new`](https://create.roblox.com/docs/reference/engine/datatypes/Instance#new) which is already provided by Roblox.
 
 **Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
 
 **Parameters:**
-* `className`: Class name of the new instance to create.
-* `propertiesTable`: The table in which the properties to configure for the new instance should be listed.
+* `className`: Class name of the new object to create.
+* `propertiesTable`: The table in which the properties to configure for the new object should be listed.
 
 **Returns:**
-* `Instance`: The `Instance` created.
+* [`Instance`](https://create.roblox.com/docs/reference/engine/classes/Instance): The object created.
 
 **Code Example:**
 ```lua
@@ -62,6 +62,41 @@ print(newCoolBlock.Parent.Name) --> Camera
 Creates multiple Instance objects based on the provided configuration array. Extended version of [createInstance](#createInstance).
 
 **Syntax:** `InstanceUtils:createInstances(instancesConfig: {{any}}) → ...Instance`
+
+**Parameters:**
+* `instancesConfig`: The configuration array for each individual instance being created.
+
+**Returns:**
+* [`...Instance`](https://create.roblox.com/docs/luau/tuples): The created instances, returned separately.
+
+**Code Example:**
+```lua
+local fooBar, aRedMeshPart = InstanceUtils:createInstances({
+   {
+      Name = "FooBar",
+      ClassName = "Part",
+      BrickColor = BrickColor.new(1, 0, 0),
+      Parent = workspace.Camera
+   },
+   {
+      Name = "ARedMeshPart",
+      ClassName = "MeshPart",
+      Parent = workspace
+   }
+})
+
+print(typeof(fooBar)) --> Instance
+print(typeof(aRedMeshPart)) --> FooBar
+
+print(fooBar.Name) --> Camera
+```
+
+----
+
+### cloneAndReplaceProperties
+Creates a full copy of the provided `cloneInstance` including all of its descendants, ignoring all instances that are not [Archivable](https://create.roblox.com/docs/reference/engine/classes/Instance#Archivable).
+
+**Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance) → ...Instance`
 
 **Parameters:**
 * `instancesConfig`: The configuration array for each individual instance being created.
