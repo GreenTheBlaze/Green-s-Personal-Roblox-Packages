@@ -38,11 +38,11 @@ Creates a new [Instance](https://create.roblox.com/docs/reference/engine/classes
 **Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
 
 **Parameters:**
-* `className`: Class name of the new object to create.
-* `propertiesTable`: The table in which the properties to configure for the new object should be listed.
+* `className`: [string](https://create.roblox.com/docs/luau/strings) - Class name of the new object to create.
+* `propertiesTable`: [Dictionary](https://create.roblox.com/docs/luau/tables#dictionaries) - The table in which the properties to configure for the new object should be listed.
 
 **Returns:**
-* [`Instance`](https://create.roblox.com/docs/reference/engine/classes/Instance): The object created.
+* [`Instance`](https://create.roblox.com/docs/reference/engine/classes/Instance) - The object created.
 
 **Code Example:**
 ```lua
@@ -96,7 +96,7 @@ print(fooBar.Name) --> Camera
 ### cloneAndReplaceProperties
 Creates a full copy of the provided `cloneInstance` including all of its descendants, ignoring all instances that are not [Archivable](https://create.roblox.com/docs/reference/engine/classes/Instance#Archivable).
 
-**Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance, propertiesTable) → ...Instance`
+**Syntax:** `InstanceUtils:cloneAndReplaceProperties(cloneInstance: Instance, propertiesTable: {[string]: any}) → ...Instance`
 
 **Parameters:**
 * `cloneInstance`: [`Instance`](https://create.roblox.com/docs/reference/engine/classes/Instance) - The configuration array for each individual instance being created.
