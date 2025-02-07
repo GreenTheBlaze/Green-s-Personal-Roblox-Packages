@@ -33,7 +33,7 @@ game      # Class: DataModel
 ## Miscellanious Functions
 
 ### createInstance
-Creates a new [Instance](https://create.roblox.com/docs/reference/engine/classes/Instance) of type `className`, similar to the default constructor [`Instance.new`](https://create.roblox.com/docs/reference/engine/datatypes/Instance#new) which is already provided by Roblox.
+Creates a new [Instance](https://create.roblox.com/docs/reference/engine/classes/Instance) of type `className`, similar to the default constructor [Instance.new](https://create.roblox.com/docs/reference/engine/datatypes/Instance#new) which is already provided by Roblox.
 
 **Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
 
@@ -67,7 +67,7 @@ Creates multiple Instance objects based on the provided configuration array. Ext
 * `instancesConfig`: The configuration array for each individual instance being created.
 
 **Returns:**
-* [`Tuple`](https://create.roblox.com/docs/luau/tuples): The created instances.
+* [Tuple](https://create.roblox.com/docs/luau/tuples): The created instances.
 
 **Code Example:**
 ```lua
@@ -102,7 +102,7 @@ Creates a full copy of the provided `cloneInstance` including all of its descend
 * `instancesConfig`: The configuration array for each individual instance being created.
 
 **Returns:**
-* [`Tuple`](https://create.roblox.com/docs/luau/tuples): The created instances.
+* [Tuple](https://create.roblox.com/docs/luau/tuples): The created instances.
 
 **Code Example:**
 ```lua
@@ -140,7 +140,7 @@ Returns an array (a numerically indexed table) containing all direct siblings of
 * `child`: The instance to whom the siblings are going to be searched from.
 
 **Returns:**
-* [`Array`](https://create.roblox.com/docs/luau/tables#arrays): An array containing the `child`'s siblings.
+* [Array](https://create.roblox.com/docs/luau/tables#arrays): An array containing the `child`'s siblings.
 
 **Code Example:**
 ```lua
@@ -157,7 +157,7 @@ Returns an array containing all ancestors of the given `descendant`. Specificall
 * `descendant`: The instance to whom the ancestors are going to be searched from.
 
 **Returns:**
-* [`Array`](https://create.roblox.com/docs/luau/tables#arrays): An array containing the `descendant`'s ancestors.
+* [Array](https://create.roblox.com/docs/luau/tables#arrays): An array containing the `descendant`'s ancestors.
 
 **Code Example:**
 ```lua
@@ -175,7 +175,7 @@ Returns an array containing all children of the given `parent` of which their `O
 * `name`: The `Object.Name` to be looked for.
 
 **Returns:**
-* [`Array`](https://create.roblox.com/docs/luau/tables#arrays): An array containing the `parent`'s children.
+* [Array](https://create.roblox.com/docs/luau/tables#arrays): An array containing the `parent`'s children.
 
 **Code Example:**
 ```lua
