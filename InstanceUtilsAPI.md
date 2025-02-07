@@ -33,7 +33,7 @@ game      # Class: DataModel
 ## Miscellanious Functions
 
 ### createInstance
-Creates a new [`Instance`](https://create.roblox.com/docs/reference/engine/classes/Instance) of type `className`, similar to the default constructor [`Instance.new`](https://create.roblox.com/docs/reference/engine/datatypes/Instance#new) which is already provided by Roblox.
+Creates a new [Instance](https://create.roblox.com/docs/reference/engine/classes/Instance) of type `className`, similar to the default constructor [`Instance.new`](https://create.roblox.com/docs/reference/engine/datatypes/Instance#new) which is already provided by Roblox.
 
 **Syntax:** `InstanceUtils:createInstance(className: Instance, propertiesTable: {any}) → Instance`
 
