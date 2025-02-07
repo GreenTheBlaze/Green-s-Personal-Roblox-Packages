@@ -92,7 +92,6 @@ print(fooBar.Name) --> Camera
 ```
 
 ----
-
 ### cloneAndReplaceProperties
 Creates a full copy of the provided `cloneInstance` including all of its descendants, ignoring all instances that are not [Archivable](https://create.roblox.com/docs/reference/engine/classes/Instance#Archivable).
 
