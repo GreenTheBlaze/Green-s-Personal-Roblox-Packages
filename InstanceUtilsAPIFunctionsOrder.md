@@ -36,13 +36,13 @@ InstanceUtils:getDescendantsOfName(ancestor: Instance, name: string): {Instance}
 InstanceUtils:getAncestorsOfName(descendant: Instance, name: string): {Instance}
 
 ----
-InstanceUtils:getChildrenOfNamesRange
+InstanceUtils:getChildrenOfNameRange
 
-InstanceUtils:getSiblingsOfNamesRange
+InstanceUtils:getSiblingsOfNameRange
 
-InstanceUtils:getDescendantsOfNamesRange
+InstanceUtils:getDescendantsOfNameRange
 
-InstanceUtils:getAncestorsOfNamesRange
+InstanceUtils:getAncestorsOfNameRange
 
 ----
 InstanceUtils:getChildrenOfClass
@@ -54,13 +54,13 @@ InstanceUtils:getDescendantsOfClass
 InstanceUtils:getAncestorsOfClass
 
 ----
-InstanceUtils:getChildrenOfClassesRange
+InstanceUtils:getChildrenOfClassRange
 
-InstanceUtils:getSiblingsOfClassesRange
+InstanceUtils:getSiblingsOfClassRange
 
-InstanceUtils:getDescendantsOfClassesRange
+InstanceUtils:getDescendantsOfClassRange
 
-InstanceUtils:getAncestorsOfClassesRange
+InstanceUtils:getAncestorsOfClassRange
 
 ----
 InstanceUtils:getChildrenOfNameAndClass
@@ -72,9 +72,9 @@ InstanceUtils:getDescendantsOfNameAndClass
 InstanceUtils:getAncestorsOfNameAndClass
 
 ----
-InstanceUtils:getChildrenOfNamesRangeAndClassesRange
+InstanceUtils:getChildrenOfNameRangeAndClassRange
 
-InstanceUtils:getSiblingsOfNamesRangeAndClassesRange
+InstanceUtils:getSiblingsOfNameRangeAndClassesRange
 
 InstanceUtils:getDescendantsOfNamesRangeAndClassesRange
 
