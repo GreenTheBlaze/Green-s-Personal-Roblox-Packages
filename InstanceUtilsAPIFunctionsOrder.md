@@ -74,20 +74,20 @@ InstanceUtils:getAncestorsOfNameAndClass
 ----
 InstanceUtils:getChildrenOfNameRangeAndClassRange
 
-InstanceUtils:getSiblingsOfNameRangeAndClassesRange
+InstanceUtils:getSiblingsOfNameRangeAndClassRange
 
-InstanceUtils:getDescendantsOfNamesRangeAndClassesRange
+InstanceUtils:getDescendantsOfNameRangeAndClassRange
 
-InstanceUtils:getAncestorsOfNamesRangeAndClassesRange
+InstanceUtils:getAncestorsOfNameRangeAndClassRange
 
 ----
-InstanceUtils:getChildrenOfNamesRangeAndClassesRange
+InstanceUtils:getChildrenOfNameRangeAndClassRange
 
-InstanceUtils:getSiblingsOfNamesRangeAndClassesRange
+InstanceUtils:getSiblingsOfNameRangeAndClassRange
 
-InstanceUtils:getDescendantsOfNamesRangeAndClassesRange
+InstanceUtils:getDescendantsOfNameRangeAndClassRange
 
-InstanceUtils:getAncestorsOfNamesRangeAndClassesRange
+InstanceUtils:getAncestorsOfNameRangeAndClassRange
 
 ----
 InstanceUtils:getChildrenOfProperties
@@ -112,15 +112,15 @@ InstanceUtils:getInstancesFromTable
 
 InstanceUtils:getInstancesOfNameFromTable(parent: Instance, name: string): {Instance}
 
-InstanceUtils:getInstancesOfNamesRangeFromTable
+InstanceUtils:getInstancesOfNameRangeFromTable
 
 InstanceUtils:getInstancesOfClassFromTable
 
-InstanceUtils:getInstancesOfClassesRangeFromTable
+InstanceUtils:getInstancesOfClassRangeFromTable
 
 InstanceUtils:getInstancesOfNameAndClassFromTable
 
-InstanceUtils:getInstancesOfNamesRangeAndClassesRangeFromTable
+InstanceUtils:getInstancesOfNameRangeAndClassRangeFromTable
 
 InstanceUtils:getInstancesOfPropertiesFromTable
 
@@ -145,13 +145,13 @@ InstanceUtils:clearDescendantsOfName(ancestor: Instance, name: string): {Instanc
 InstanceUtils:clearAncestorsOfName(ancestor: Instance, name: string): {Instance}
 
 ----
-InstanceUtils:clearChildrenOfNamesRange
+InstanceUtils:clearChildrenOfNameRange
 
-InstanceUtils:clearSiblingsOfNamesRange
+InstanceUtils:clearSiblingsOfNameRange
 
-InstanceUtils:clearDescendantsOfNamesRange
+InstanceUtils:clearDescendantsOfNameRange
 
-InstanceUtils:clearAncestorsOfNamesRange
+InstanceUtils:clearAncestorsOfNameRange
 
 ----
 InstanceUtils:clearChildrenOfClass
@@ -163,13 +163,13 @@ InstanceUtils:clearDescendantsOfClass
 InstanceUtils:clearAncestorsOfClass
 
 ----
-InstanceUtils:clearChildrenOfClassesRange
+InstanceUtils:clearChildrenOfClassRange
 
-InstanceUtils:clearSiblingsOfClassesRange
+InstanceUtils:clearSiblingsOfClassRange
 
-InstanceUtils:clearDescendantsOfClassesRange
+InstanceUtils:clearDescendantsOfClassRange
 
-InstanceUtils:clearAncestorsOfClassesRange
+InstanceUtils:clearAncestorsOfClassRange
 
 ----
 InstanceUtils:clearChildrenOfNameAndClass
@@ -181,22 +181,22 @@ InstanceUtils:clearDescendantsOfNameAndClass
 InstanceUtils:clearAncestorsOfNameAndClass
 
 ----
-InstanceUtils:clearChildrenOfNamesRangeAndClassesRange
+InstanceUtils:clearChildrenOfNameRangeAndClassRange
 
-InstanceUtils:clearSiblingsOfNamesRangeAndClassesRange
+InstanceUtils:clearSiblingsOfNameRangeAndClassRange
 
-InstanceUtils:clearDescendantsOfNamesRangeAndClassesRange
+InstanceUtils:clearDescendantsOfNameRangeAndClassRange
 
-InstanceUtils:clearAncestorsOfNamesRangeAndClassesRange
+InstanceUtils:clearAncestorsOfNameRangeAndClassRange
 
 ----
-InstanceUtils:clearChildrenOfNamesRangeAndClassesRange
+InstanceUtils:clearChildrenOfNameRangeAndClassRange
 
-InstanceUtils:clearSiblingsOfNamesRangeAndClassesRange
+InstanceUtils:clearSiblingsOfNameRangeAndClassRange
 
-InstanceUtils:clearDescendantsOfNamesRangeAndClassesRange
+InstanceUtils:clearDescendantsOfNameRangeAndClassRange
 
-InstanceUtils:clearAncestorsOfNamesRangeAndClassesRange
+InstanceUtils:clearAncestorsOfNameRangeAndClassRange
 
 ----
 InstanceUtils:clearChildrenOfProperties
@@ -221,15 +221,15 @@ InstanceUtils:clearInstancesFromTable
 
 InstanceUtils:clearInstancesOfNameFromTable(parent: Instance, name: string): {Instance}
 
-InstanceUtils:clearInstancesOfNamesRangeFromTable
+InstanceUtils:clearInstancesOfNameRangeFromTable
 
 InstanceUtils:clearInstancesOfClassFromTable
 
-InstanceUtils:clearInstancesOfClassesRangeFromTable
+InstanceUtils:clearInstancesOfClassRangeFromTable
 
 InstanceUtils:clearInstancesOfNameAndClassFromTable
 
-InstanceUtils:clearInstancesOfNamesRangeAndClassesRangeFromTable
+InstanceUtils:clearInstancesOfNameRangeAndClassRangeFromTable
 
 InstanceUtils:clearInstancesOfPropertiesFromTable
 
@@ -256,22 +256,22 @@ InstanceUtils:waitForDescendants
 InstanceUtils:waitForAncestors
 
 ----
-InstanceUtils:waitForChildOfNamesRange
+InstanceUtils:waitForChildOfNameRange
 
-InstanceUtils:waitForSiblingOfNamesRange
+InstanceUtils:waitForSiblingOfNameRange
 
-InstanceUtils:waitForDescendantOfNamesRange
+InstanceUtils:waitForDescendantOfNameRange
 
-InstanceUtils:waitForAncestorOfNamesRange
+InstanceUtils:waitForAncestorOfNameRange
 
 ----
-InstanceUtils:waitForChildrenOfNamesRanges
+InstanceUtils:waitForChildrenOfNameRanges
 
-InstanceUtils:waitForSiblingsOfNamesRanges
+InstanceUtils:waitForSiblingsOfNameRanges
 
-InstanceUtils:waitForDescendantsOfNamesRanges
+InstanceUtils:waitForDescendantsOfNameRanges
 
-InstanceUtils:waitForAncestorsOfNamesRanges
+InstanceUtils:waitForAncestorsOfNameRanges
 
 ----
 InstanceUtils:waitForChildOfClass
@@ -292,22 +292,22 @@ InstanceUtils:waitForDescendantsOfClasses
 InstanceUtils:waitForAncestorsOfClasses
 
 ----
-InstanceUtils:waitForChildOfClassesRange
+InstanceUtils:waitForChildOfClassRange
 
-InstanceUtils:waitForSiblingOfClassesRange
+InstanceUtils:waitForSiblingOfClassRange
 
-InstanceUtils:waitForDescendantOfClassesRange
+InstanceUtils:waitForDescendantOfClassRange
 
-InstanceUtils:waitForAncestorOfClassesRange
+InstanceUtils:waitForAncestorOfClassRange
 
 ----
-InstanceUtils:waitForChildrenOfClassesRanges
+InstanceUtils:waitForChildrenOfClassRanges
 
-InstanceUtils:waitForSiblingsOfClassesRanges
+InstanceUtils:waitForSiblingsOfClassRanges
 
-InstanceUtils:waitForDescendantsOfClassesRanges
+InstanceUtils:waitForDescendantsOfClassRanges
 
-InstanceUtils:waitForAncestorsOfClassesRanges
+InstanceUtils:waitForAncestorsOfClassRanges
 
 ----
 InstanceUtils:waitForChildOfNameAndClass
@@ -328,22 +328,22 @@ InstanceUtils:waitForDescendantsOfNamesAndClasses
 InstanceUtils:waitForAncestorsOfNamesAndClasses
 
 ----
-InstanceUtils:waitForChildOfNamesRangeAndClassesRange
+InstanceUtils:waitForChildOfNameRangeAndClassRange
 
-InstanceUtils:waitForSiblingOfNamesRangeAndClassesRange
+InstanceUtils:waitForSiblingOfNameRangeAndClassRange
 
-InstanceUtils:waitForDescendantOfNamesRangeAndClassesRange
+InstanceUtils:waitForDescendantOfNameRangeAndClassRange
 
-InstanceUtils:waitForAncestorOfNamesRangeAndClassesRange
+InstanceUtils:waitForAncestorOfNameRangeAndClassRange
 
 ----
-InstanceUtils:waitForChildrenOfNamesRangesAndClassesRanges
+InstanceUtils:waitForChildrenOfNameRangesAndClassRanges
 
-InstanceUtils:waitForSiblingsOfNamesRangesAndClassesRanges
+InstanceUtils:waitForSiblingsOfNameRangesAndClassRanges
 
-InstanceUtils:waitForDescendantsOfNamesRangesAndClassesRanges
+InstanceUtils:waitForDescendantsOfNameRangesAndClassRanges
 
-InstanceUtils:waitForAncestorsOfNamesRangesAndClassesRanges
+InstanceUtils:waitForAncestorsOfNameRangesAndClassRanges
 
 ----
 InstanceUtils:waitForChildOfProperties
@@ -410,9 +410,9 @@ InstanceUtils:waitForInstanceOfClassFromTable
 InstanceUtils:waitForInstancesOfClassesFromTable
 
 ----
-InstanceUtils:waitForInstanceOfClassesRangeFromTable
+InstanceUtils:waitForInstanceOfClassRangeFromTable
 
-InstanceUtils:waitForInstancesOfClassesRangesFromTable
+InstanceUtils:waitForInstancesOfClassRangesFromTable
 
 ----
 InstanceUtils:waitForInstanceOfNameAndClassFromTable
@@ -420,9 +420,9 @@ InstanceUtils:waitForInstanceOfNameAndClassFromTable
 InstanceUtils:waitForInstancesOfNamesAndClassesFromTable
 
 ----
-InstanceUtils:waitForInstanceOfNamesRangeAndClassesRangeFromTable
+InstanceUtils:waitForInstanceOfNameRangeAndClassRangeFromTable
 
-InstanceUtils:waitForInstancesOfNamesRangesAndClassesRangesFromTable
+InstanceUtils:waitForInstancesOfNameRangesAndClassRangesFromTable
 
 ----
 InstanceUtils:waitForInstanceOfPropertiesFromTable
@@ -445,17 +445,17 @@ InstanceUtils:waitForInstancesInPath
 ----
 InstanceUtils:waitForInstancesOfNamesInPath
 
-InstanceUtils:waitForInstancesOfNamesRangesInPath
+InstanceUtils:waitForInstancesOfNameRangesInPath
 
 ----
 InstanceUtils:waitForInstancesOfClassesInPath
 
-InstanceUtils:waitForInstancesOfClassesRangesInPath
+InstanceUtils:waitForInstancesOfClassRangesInPath
 
 ----
 InstanceUtils:waitForInstancesOfNamesAndClassesInPath
 
-InstanceUtils:waitForInstancesOfNamesRangesAndClassesRangesInPath
+InstanceUtils:waitForInstancesOfNameRangesAndClassRangesInPath
 
 ----
 ## FindFirst
@@ -474,22 +474,22 @@ InstanceUtils:findFirstDescendants
 InstanceUtils:findFirstAncestors
 
 ----
-InstanceUtils:findFirstChildOfNamesRange
+InstanceUtils:findFirstChildOfNameRange
 
-InstanceUtils:findFirstSiblingOfNamesRange
+InstanceUtils:findFirstSiblingOfNameRange
 
-InstanceUtils:findFirstDescendantOfNamesRange
+InstanceUtils:findFirstDescendantOfNameRange
 
-InstanceUtils:findFirstAncestorOfNamesRange
+InstanceUtils:findFirstAncestorOfNameRange
 
 ----
-InstanceUtils:findFirstChildrenOfNamesRanges
+InstanceUtils:findFirstChildrenOfNameRanges
 
-InstanceUtils:findFirstSiblingsOfNamesRanges
+InstanceUtils:findFirstSiblingsOfNameRanges
 
-InstanceUtils:findFirstDescendantsOfNamesRanges
+InstanceUtils:findFirstDescendantsOfNameRanges
 
-InstanceUtils:findFirstAncestorsOfNamesRanges
+InstanceUtils:findFirstAncestorsOfNameRanges
 
 ----
 InstanceUtils:findFirstSiblingOfClass
@@ -506,22 +506,22 @@ InstanceUtils:findFirstDescendantsOfClasses
 InstanceUtils:findFirstAncestorsOfClasses
 
 ----
-InstanceUtils:findFirstChildOfClassesRange
+InstanceUtils:findFirstChildOfClassRange
 
-InstanceUtils:findFirstSiblingOfClassesRange
+InstanceUtils:findFirstSiblingOfClassRange
 
-InstanceUtils:findFirstDescendantOfClassesRange
+InstanceUtils:findFirstDescendantOfClassRange
 
-InstanceUtils:findFirstAncestorOfClassesRange
+InstanceUtils:findFirstAncestorOfClassRange
 
 ----
-InstanceUtils:findFirstChildrenOfClassesRanges
+InstanceUtils:findFirstChildrenOfClassRanges
 
-InstanceUtils:findFirstSiblingsOfClassesRanges
+InstanceUtils:findFirstSiblingsOfClassRanges
 
-InstanceUtils:findFirstDescendantsOfClassesRanges
+InstanceUtils:findFirstDescendantsOfClassRanges
 
-InstanceUtils:findFirstAncestorsOfClassesRanges
+InstanceUtils:findFirstAncestorsOfClassRanges
 
 ----
 InstanceUtils:findFirstChildOfNameAndClass
@@ -542,22 +542,22 @@ InstanceUtils:findFirstDescendantsOfNamesAndClasses
 InstanceUtils:findFirstAncestorsOfNamesAndClasses
 
 ----
-InstanceUtils:findFirstChildOfNamesRangeAndClassesRange
+InstanceUtils:findFirstChildOfNameRangeAndClassRange
 
-InstanceUtils:findFirstSiblingOfNamesRangeAndClassesRange
+InstanceUtils:findFirstSiblingOfNameRangeAndClassRange
 
-InstanceUtils:findFirstDescendantOfNamesRangeAndClassesRange
+InstanceUtils:findFirstDescendantOfNameRangeAndClassRange
 
-InstanceUtils:findFirstAncestorOfNamesRangeAndClassesRange
+InstanceUtils:findFirstAncestorOfNameRangeAndClassRange
 
 ----
-InstanceUtils:findFirstChildrenOfNamesRangesAndClassesRanges
+InstanceUtils:findFirstChildrenOfNameRangesAndClassRanges
 
-InstanceUtils:findFirstSiblingsOfNamesRangesAndClassesRanges
+InstanceUtils:findFirstSiblingsOfNameRangesAndClassRanges
 
-InstanceUtils:findFirstDescendantsOfNamesRangesAndClassesRanges
+InstanceUtils:findFirstDescendantsOfNameRangesAndClassRanges
 
-InstanceUtils:findFirstAncestorsOfNamesRangesAndClassesRanges
+InstanceUtils:findFirstAncestorsOfNameRangesAndClassRanges
 
 ----
 InstanceUtils:findFirstChildOfProperties
@@ -624,9 +624,9 @@ InstanceUtils:findFirstInstanceOfClassFromTable
 InstanceUtils:findFirstInstancesOfClassesFromTable
 
 ----
-InstanceUtils:findFirstInstanceOfClassesRangeFromTable
+InstanceUtils:findFirstInstanceOfClassRangeFromTable
 
-InstanceUtils:findFirstInstancesOfClassesRangesFromTable
+InstanceUtils:findFirstInstancesOfClassRangesFromTable
 
 ----
 InstanceUtils:findFirstInstanceOfNameAndClassFromTable
@@ -634,9 +634,9 @@ InstanceUtils:findFirstInstanceOfNameAndClassFromTable
 InstanceUtils:findFirstInstancesOfNamesAndClassesFromTable
 
 ----
-InstanceUtils:findFirstInstanceOfNamesRangeAndClassesRangeFromTable
+InstanceUtils:findFirstInstanceOfNameRangeAndClassRangeFromTable
 
-InstanceUtils:findFirstInstancesOfNamesRangesAndClassesRangesFromTable
+InstanceUtils:findFirstInstancesOfNameRangesAndClassRangesFromTable
 
 ----
 InstanceUtils:findFirstInstanceOfPropertiesFromTable
@@ -668,17 +668,17 @@ InstanceUtils:getDescendantsOfName(ancestor: Instance, name: string): {Instance}
 
 InstanceUtils:getAncestorsOfName(descendant: Instance, name: string): {Instance}
 
-function InstanceUtils:getChildrenOfNamesRange(parent: Instance, namesRange: {string}): {Instance}
+function InstanceUtils:getChildrenOfNameRange(parent: Instance, NameRange: {string}): {Instance}
 
-function InstanceUtils:getSiblingsOfNamesRange(child: Instance, namesRange: {string}): {Instance}
+function InstanceUtils:getSiblingsOfNameRange(child: Instance, NameRange: {string}): {Instance}
 
-function InstanceUtils:getDescendantsOfNamesRange(ancestor: Instance, namesRange: {string}): {Instance}
-	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfNamesRange' (Instance expected)")
-	assert(typeof(namesRange) == "table", "Invalid argument #2 to 'getDescendantsOfNamesRange' (table expected)")
+function InstanceUtils:getDescendantsOfNameRange(ancestor: Instance, NameRange: {string}): {Instance}
+	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfNameRange' (Instance expected)")
+	assert(typeof(NameRange) == "table", "Invalid argument #2 to 'getDescendantsOfNameRange' (table expected)")
 
 	local foundDescendants: {Instance} = {}
 
-	for _, name: string in namesRange do
+	for _, name: string in NameRange do
 		for _, descendant: Instance in InstanceUtils:getDescendantsOfName(ancestor, name) do
 			table.insert(foundDescendants, descendant)
 		end
@@ -687,14 +687,14 @@ function InstanceUtils:getDescendantsOfNamesRange(ancestor: Instance, namesRange
 	return foundDescendants
 end
 
-function InstanceUtils:getAncestorsOfNamesRange(descendant: Instance, namesRange: {string}): {Instance}
-	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfNamesRange' (Instance expected)")
-	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfNamesRange' (Instance parent is nil)")
-	assert(typeof(namesRange) == "table", "Invalid argument #2 to 'getAncestorsOfNamesRange' (table expected)")
+function InstanceUtils:getAncestorsOfNameRange(descendant: Instance, NameRange: {string}): {Instance}
+	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfNameRange' (Instance expected)")
+	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfNameRange' (Instance parent is nil)")
+	assert(typeof(NameRange) == "table", "Invalid argument #2 to 'getAncestorsOfNameRange' (table expected)")
 
 	local foundAncestors: {Instance} = {}
 
-	for _, name: string in namesRange do
+	for _, name: string in NameRange do
 		for _, ancestor: Instance in InstanceUtils:getAncestorsOfName(descendant, name) do
 			table.insert(foundAncestors, ancestor)
 		end
@@ -769,13 +769,13 @@ end
 
 --
 
-function InstanceUtils:getChildrenOfClassesRange(parent: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(parent) == "Instance", "Invalid argument #1 to 'getChildrenOfClassesRange' (Instance expected)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getChildrenOfClassesRange' (table expected)")
+function InstanceUtils:getChildrenOfClassRange(parent: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(parent) == "Instance", "Invalid argument #1 to 'getChildrenOfClassRange' (Instance expected)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getChildrenOfClassRange' (table expected)")
 
 	local foundChildren: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, child: Instance in InstanceUtils:getChildrenOfClass(parent, className) do
 			table.insert(foundChildren, child)
 		end
@@ -784,14 +784,14 @@ function InstanceUtils:getChildrenOfClassesRange(parent: Instance, classNamesRan
 	return foundChildren
 end
 
-function InstanceUtils:getSiblingsOfClassesRange(child: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(child) == "Instance", "Invalid argument #1 to 'getSiblingsOfClassesRange' (Instance expected)")
-	assert(child.Parent ~= nil, "Invalid argument #1 to 'getSiblingsOfClassesRange' (Instance parent is nil)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getSiblingsOfClassesRange' (table expected)")
+function InstanceUtils:getSiblingsOfClassRange(child: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(child) == "Instance", "Invalid argument #1 to 'getSiblingsOfClassRange' (Instance expected)")
+	assert(child.Parent ~= nil, "Invalid argument #1 to 'getSiblingsOfClassRange' (Instance parent is nil)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getSiblingsOfClassRange' (table expected)")
 
 	local foundSiblings: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, sibling: Instance in InstanceUtils:getSiblingsOfClass(child, className) do
 			table.insert(foundSiblings, sibling)
 		end
@@ -800,13 +800,13 @@ function InstanceUtils:getSiblingsOfClassesRange(child: Instance, classNamesRang
 	return foundSiblings
 end
 
-function InstanceUtils:getDescendantsOfClassesRange(ancestor: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfClassesRange' (Instance expected)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getDescendantsOfClassesRange' (table expected)")
+function InstanceUtils:getDescendantsOfClassRange(ancestor: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfClassRange' (Instance expected)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getDescendantsOfClassRange' (table expected)")
 
 	local foundDescendants: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, descendant: Instance in InstanceUtils:getDescendantsOfClass(ancestor, className) do
 			table.insert(foundDescendants, descendant)
 		end
@@ -815,14 +815,14 @@ function InstanceUtils:getDescendantsOfClassesRange(ancestor: Instance, classNam
 	return foundDescendants
 end
 
-function InstanceUtils:getAncestorsOfClassesRange(descendant: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfClassesRange' (Instance expected)")
-	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfClassesRange' (Instance parent is nil)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getAncestorsOfClassesRange' (table expected)")
+function InstanceUtils:getAncestorsOfClassRange(descendant: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfClassRange' (Instance expected)")
+	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfClassRange' (Instance parent is nil)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getAncestorsOfClassRange' (table expected)")
 
 	local foundAncestors: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, ancestor: Instance in InstanceUtils:getAncestorsOfClass(descendant, className) do
 			table.insert(foundAncestors, descendant)
 		end
@@ -869,37 +869,37 @@ end
 
 --
 
-function InstanceUtils:getChildrenOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getChildrenOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:getSiblingsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getSiblingsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:getDescendantsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getDescendantsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:getAncestorsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getAncestorsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
 --
 
-function InstanceUtils:getChildrenOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getChildrenOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:getSiblingsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getSiblingsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:getDescendantsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getDescendantsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:getAncestorsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getAncestorsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
@@ -932,11 +932,11 @@ InstanceUtils:clearDescendantsOfName(ancestor: Instance, name: string): {Instanc
 
 --
 
-InstanceUtils:clearChildrenOfNamesRange(parent: Instance, names: {string}): {Instance?}
+InstanceUtils:clearChildrenOfNameRange(parent: Instance, names: {string}): {Instance?}
 
-InstanceUtils:clearSiblingsOfNamesRange(child: Instance, names: {string}): {Instance?}
+InstanceUtils:clearSiblingsOfNameRange(child: Instance, names: {string}): {Instance?}
 
-InstanceUtils:clearDescendantsOfNamesRange(child: Instance, names: {string}): {Instance?}
+InstanceUtils:clearDescendantsOfNameRange(child: Instance, names: {string}): {Instance?}
 
 --
 
@@ -948,11 +948,11 @@ function InstanceUtils:clearDescendantsOfClass(child: Instance, className: strin
 
 --
 
-function InstanceUtils:clearChildrenOfClassesRange(child: Instance, classNames: {string}): {Instance?}
+function InstanceUtils:clearChildrenOfClassRange(child: Instance, classNames: {string}): {Instance?}
 
-function InstanceUtils:clearSiblingsOfClassesRange(child: Instance, classNames: {string}): {Instance?}
+function InstanceUtils:clearSiblingsOfClassRange(child: Instance, classNames: {string}): {Instance?}
 
-function InstanceUtils:clearDescendantsOfClassesRange(child: Instance, classNames: {string}): {Instance?}
+function InstanceUtils:clearDescendantsOfClassRange(child: Instance, classNames: {string}): {Instance?}
 
 --
 
@@ -984,29 +984,29 @@ end
 
 --
 
-function InstanceUtils:clearChildrenOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:clearChildrenOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:clearSiblingsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:clearSiblingsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:clearDescendantsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:clearDescendantsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
 --
 
-function InstanceUtils:clearChildrenOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:clearChildrenOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:clearSiblingsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:clearSiblingsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:clearDescendantsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:clearDescendantsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
@@ -1073,13 +1073,13 @@ end
 function InstanceUtils:getInstancesFromTableOfName(searchTable: {Instance}, name: string): {Instance}
 end
 
-function InstanceUtils:getInstancesFromTableOfNamesRange(searchTable: {Instance}, namesRange: {string}): {Instance}
-	assert(typeof(searchTable) == "table", "Invalid argument #1 to 'getInstancesFromTableOfNamesRange' (table expected)")
-	assert(typeof(namesRange) == "table", "Invalid argument #2 to 'getInstancesFromTableOfNamesRange' (table expected)")
+function InstanceUtils:getInstancesFromTableOfNameRange(searchTable: {Instance}, NameRange: {string}): {Instance}
+	assert(typeof(searchTable) == "table", "Invalid argument #1 to 'getInstancesFromTableOfNameRange' (table expected)")
+	assert(typeof(NameRange) == "table", "Invalid argument #2 to 'getInstancesFromTableOfNameRange' (table expected)")
 
 	local foundInstances: {Instance} = {}
 
-	for _, name: string in namesRange do
+	for _, name: string in NameRange do
 		for _, instance: Instance in InstanceUtils:getInstancesFromTableOfName(searchTable, name) do
 			table.insert(foundInstances, instance)
 		end
@@ -1103,13 +1103,13 @@ function InstanceUtils:getInstancesFromTableOfClass(searchTable: {Instance}, cla
 	return foundInstances
 end
 
-function InstanceUtils:getInstancesFromTableOfClassesRange(searchTable: {Instance}, classNamesRange: {string}): {Instance}
-	assert(typeof(searchTable) == "table", "Invalid argument #1 to 'getInstancesFromTableOfClassesRange' (table expected)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getInstancesFromTableOfClassesRange' (table expected)")
+function InstanceUtils:getInstancesFromTableOfClassRange(searchTable: {Instance}, classNameRange: {string}): {Instance}
+	assert(typeof(searchTable) == "table", "Invalid argument #1 to 'getInstancesFromTableOfClassRange' (table expected)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getInstancesFromTableOfClassRange' (table expected)")
 
 	local foundInstances: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, instance: Instance in InstanceUtils:getInstancesFromTableOfClass(searchTable, className) do
 			table.insert(foundInstances, instance)
 		end
@@ -1232,13 +1232,13 @@ end
 
 --
 
-function InstanceUtils:getChildrenOfNamesRange(parent: Instance, namesRange: {string}): {Instance}
-	assert(typeof(parent) == "Instance", "Invalid argument #1 to 'getChildrenOfNamesRange' (Instance expected)")
-	assert(typeof(namesRange) == "table", "Invalid argument #2 to 'getChildrenOfNamesRange' (table expected)")
+function InstanceUtils:getChildrenOfNameRange(parent: Instance, NameRange: {string}): {Instance}
+	assert(typeof(parent) == "Instance", "Invalid argument #1 to 'getChildrenOfNameRange' (Instance expected)")
+	assert(typeof(NameRange) == "table", "Invalid argument #2 to 'getChildrenOfNameRange' (table expected)")
 
 	local foundChildren: {Instance} = {}
 
-	for _, name: string in namesRange do
+	for _, name: string in NameRange do
 		for _, child: Instance in InstanceUtils:getChildrenOfName(parent, name) do
 			table.insert(foundChildren, child)
 		end
@@ -1247,14 +1247,14 @@ function InstanceUtils:getChildrenOfNamesRange(parent: Instance, namesRange: {st
 	return foundChildren
 end
 
-function InstanceUtils:getSiblingsOfNamesRange(child: Instance, namesRange: {string}): {Instance}
-	assert(typeof(child) == "Instance", "Invalid argument #1 to 'getSiblingsOfNamesRange' (Instance expected)")
-	assert(child.Parent ~= nil, "Invalid argument #1 to 'getSiblingsOfNamesRange' (Instance parent is nil)")
-	assert(typeof(namesRange) == "table", "Invalid argument #2 to 'getSiblingsOfNamesRange' (table expected)")
+function InstanceUtils:getSiblingsOfNameRange(child: Instance, NameRange: {string}): {Instance}
+	assert(typeof(child) == "Instance", "Invalid argument #1 to 'getSiblingsOfNameRange' (Instance expected)")
+	assert(child.Parent ~= nil, "Invalid argument #1 to 'getSiblingsOfNameRange' (Instance parent is nil)")
+	assert(typeof(NameRange) == "table", "Invalid argument #2 to 'getSiblingsOfNameRange' (table expected)")
 
 	local foundSiblings: {Instance} = {}
 
-	for _, name: string in namesRange do
+	for _, name: string in NameRange do
 		for _, sibling: Instance in InstanceUtils:getSiblingsOfName(child, name) do
 			table.insert(foundSiblings, sibling)
 		end
@@ -1263,13 +1263,13 @@ function InstanceUtils:getSiblingsOfNamesRange(child: Instance, namesRange: {str
 	return foundSiblings
 end
 
-function InstanceUtils:getDescendantsOfNamesRange(ancestor: Instance, namesRange: {string}): {Instance}
-	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfNamesRange' (Instance expected)")
-	assert(typeof(namesRange) == "table", "Invalid argument #2 to 'getDescendantsOfNamesRange' (table expected)")
+function InstanceUtils:getDescendantsOfNameRange(ancestor: Instance, NameRange: {string}): {Instance}
+	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfNameRange' (Instance expected)")
+	assert(typeof(NameRange) == "table", "Invalid argument #2 to 'getDescendantsOfNameRange' (table expected)")
 
 	local foundDescendants: {Instance} = {}
 
-	for _, name: string in namesRange do
+	for _, name: string in NameRange do
 		for _, descendant: Instance in InstanceUtils:getDescendantsOfName(ancestor, name) do
 			table.insert(foundDescendants, descendant)
 		end
@@ -1278,14 +1278,14 @@ function InstanceUtils:getDescendantsOfNamesRange(ancestor: Instance, namesRange
 	return foundDescendants
 end
 
-function InstanceUtils:getAncestorsOfNamesRange(descendant: Instance, namesRange: {string}): {Instance}
-	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfNamesRange' (Instance expected)")
-	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfNamesRange' (Instance parent is nil)")
-	assert(typeof(namesRange) == "table", "Invalid argument #2 to 'getAncestorsOfNamesRange' (table expected)")
+function InstanceUtils:getAncestorsOfNameRange(descendant: Instance, NameRange: {string}): {Instance}
+	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfNameRange' (Instance expected)")
+	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfNameRange' (Instance parent is nil)")
+	assert(typeof(NameRange) == "table", "Invalid argument #2 to 'getAncestorsOfNameRange' (table expected)")
 
 	local foundAncestors: {Instance} = {}
 
-	for _, name: string in namesRange do
+	for _, name: string in NameRange do
 		for _, ancestor: Instance in InstanceUtils:getAncestorsOfName(descendant, name) do
 			table.insert(foundAncestors, ancestor)
 		end
@@ -1360,13 +1360,13 @@ end
 
 --
 
-function InstanceUtils:getChildrenOfClassesRange(parent: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(parent) == "Instance", "Invalid argument #1 to 'getChildrenOfClassesRange' (Instance expected)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getChildrenOfClassesRange' (table expected)")
+function InstanceUtils:getChildrenOfClassRange(parent: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(parent) == "Instance", "Invalid argument #1 to 'getChildrenOfClassRange' (Instance expected)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getChildrenOfClassRange' (table expected)")
 
 	local foundChildren: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, child: Instance in InstanceUtils:getChildrenOfClass(parent, className) do
 			table.insert(foundChildren, child)
 		end
@@ -1375,14 +1375,14 @@ function InstanceUtils:getChildrenOfClassesRange(parent: Instance, classNamesRan
 	return foundChildren
 end
 
-function InstanceUtils:getSiblingsOfClassesRange(child: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(child) == "Instance", "Invalid argument #1 to 'getSiblingsOfClassesRange' (Instance expected)")
-	assert(child.Parent ~= nil, "Invalid argument #1 to 'getSiblingsOfClassesRange' (Instance parent is nil)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getSiblingsOfClassesRange' (table expected)")
+function InstanceUtils:getSiblingsOfClassRange(child: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(child) == "Instance", "Invalid argument #1 to 'getSiblingsOfClassRange' (Instance expected)")
+	assert(child.Parent ~= nil, "Invalid argument #1 to 'getSiblingsOfClassRange' (Instance parent is nil)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getSiblingsOfClassRange' (table expected)")
 
 	local foundSiblings: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, sibling: Instance in InstanceUtils:getSiblingsOfClass(child, className) do
 			table.insert(foundSiblings, sibling)
 		end
@@ -1391,13 +1391,13 @@ function InstanceUtils:getSiblingsOfClassesRange(child: Instance, classNamesRang
 	return foundSiblings
 end
 
-function InstanceUtils:getDescendantsOfClassesRange(ancestor: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfClassesRange' (Instance expected)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getDescendantsOfClassesRange' (table expected)")
+function InstanceUtils:getDescendantsOfClassRange(ancestor: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(ancestor) == "Instance", "Invalid argument #1 to 'getDescendantsOfClassRange' (Instance expected)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getDescendantsOfClassRange' (table expected)")
 
 	local foundDescendants: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, descendant: Instance in InstanceUtils:getDescendantsOfClass(ancestor, className) do
 			table.insert(foundDescendants, descendant)
 		end
@@ -1406,14 +1406,14 @@ function InstanceUtils:getDescendantsOfClassesRange(ancestor: Instance, classNam
 	return foundDescendants
 end
 
-function InstanceUtils:getAncestorsOfClassesRange(descendant: Instance, classNamesRange: {string}): {Instance}
-	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfClassesRange' (Instance expected)")
-	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfClassesRange' (Instance parent is nil)")
-	assert(typeof(classNamesRange) == "table", "Invalid argument #2 to 'getAncestorsOfClassesRange' (table expected)")
+function InstanceUtils:getAncestorsOfClassRange(descendant: Instance, classNameRange: {string}): {Instance}
+	assert(typeof(descendant) == "Instance", "Invalid argument #1 to 'getAncestorsOfClassRange' (Instance expected)")
+	assert(descendant.Parent ~= nil, "Invalid argument #1 to 'getAncestorsOfClassRange' (Instance parent is nil)")
+	assert(typeof(classNameRange) == "table", "Invalid argument #2 to 'getAncestorsOfClassRange' (table expected)")
 
 	local foundAncestors: {Instance} = {}
 
-	for _, className: string in classNamesRange do
+	for _, className: string in classNameRange do
 		for _, ancestor: Instance in InstanceUtils:getAncestorsOfClass(descendant, className) do
 			table.insert(foundAncestors, descendant)
 		end
@@ -1460,37 +1460,37 @@ end
 
 --
 
-function InstanceUtils:getChildrenOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getChildrenOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:getSiblingsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getSiblingsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:getDescendantsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getDescendantsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
-function InstanceUtils:getAncestorsOfNamesRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
+function InstanceUtils:getAncestorsOfNameRangeAndClass(child: Instance, siblingNames: {string}, className: string): {Instance?}
 
 end
 
 --
 
-function InstanceUtils:getChildrenOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getChildrenOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:getSiblingsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getSiblingsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:getDescendantsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getDescendantsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
-function InstanceUtils:getAncestorsOfNameAndClassesRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
+function InstanceUtils:getAncestorsOfNameAndClassRange(child: Instance, siblingName: string, classNames: {string}): {Instance?}
 
 end
 
@@ -1837,37 +1837,37 @@ end
 
 --
 
-function InstanceUtils:waitForChildOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:waitForChildOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
-function InstanceUtils:waitForSiblingOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:waitForSiblingOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
-function InstanceUtils:waitForDescendantOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:waitForDescendantOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
-function InstanceUtils:waitForAncestorOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:waitForAncestorOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
 --
 
-function InstanceUtils:waitForChildrenOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForChildrenOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:waitForSiblingsOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForSiblingsOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:waitForDescendantsOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForDescendantsOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:waitForAncestorsOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForAncestorsOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
@@ -1953,19 +1953,19 @@ end
 
 --
 
-function InstanceUtils:waitForChildrenOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForChildrenOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:waitForSiblingsOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForSiblingsOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:waitForDescendantsOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForDescendantsOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:waitForAncestorsOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:waitForAncestorsOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
@@ -2281,37 +2281,37 @@ end
 
 --
 
-function InstanceUtils:findFirstChildOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:findFirstChildOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
-function InstanceUtils:findFirstSiblingOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:findFirstSiblingOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
-function InstanceUtils:findFirstDescendantOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:findFirstDescendantOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
-function InstanceUtils:findFirstAncestorOfClassesRange(child: Instance, classNames: {string}): Instance
+function InstanceUtils:findFirstAncestorOfClassRange(child: Instance, classNames: {string}): Instance
 
 end
 
 --
 
-function InstanceUtils:findFirstChildrenOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstChildrenOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:findFirstSiblingsOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstSiblingsOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:findFirstDescendantsOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstDescendantsOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:findFirstAncestorsOfClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstAncestorsOfClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
@@ -2335,19 +2335,19 @@ end
 
 --
 
-function InstanceUtils:findFirstChildrenOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstChildrenOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:findFirstSiblingsOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstSiblingsOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:findFirstDescendantsOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstDescendantsOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
-function InstanceUtils:findFirstAncestorsOfNamesRangeAndClassesRange(child: Instance, classNames: {string}): ...Instance
+function InstanceUtils:findFirstAncestorsOfNameRangeAndClassRange(child: Instance, classNames: {string}): ...Instance
 
 end
 
